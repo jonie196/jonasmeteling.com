@@ -163,6 +163,17 @@ Animations
 ==========
  */
 /* Explore Banner Button */
+@-webkit-keyframes explore {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes explore {
   0% {
     transform: scale(1);
@@ -198,6 +209,7 @@ nav {
   justify-items: center;
   align-items: center;
   list-style: none;
+  -moz-column-gap: 1rem;
   column-gap: 1rem;
   font-size: 1.25rem;
   letter-spacing: 2px;
@@ -364,6 +376,7 @@ Banner
   font-weight: lighter;
 }
 .btn-explore {
+  -webkit-animation: explore 3s ease infinite;
   animation: explore 3s ease infinite;
   padding: 1rem 2rem;
 }
@@ -501,6 +514,7 @@ Overview
 }
 .overview-img {
   max-height: 10rem;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .overview-text {
@@ -588,6 +602,7 @@ Footer
 .footer-signiture .fas {
   color: rgb(202, 118, 118);
   font-size: 1.5rem;
+  -webkit-animation: explore 3s ease infinite;
   animation: explore 3s ease infinite;
 }
 .footer-center h4 {
