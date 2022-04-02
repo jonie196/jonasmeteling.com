@@ -231,7 +231,7 @@ nav {
 }
 .social-icons {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 .social-icons .fab {
   font-size: 1.5rem;
@@ -407,10 +407,10 @@ Overview
 }
 .overview-items-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   justify-items: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   /* margin-top: 4rem; */
 }
@@ -435,12 +435,12 @@ Overview
   background: white;
 }
 .overview-img {
-  max-height: 10rem;
+  height: 15rem;
   -o-object-fit: cover;
   object-fit: cover;
 }
 .overview-text {
-  text-transform: capitalize;
+  text-transform: initial;
   max-width: 80%;
   margin: 3rem auto;
   transition: var(--transition);
@@ -452,6 +452,11 @@ Overview
   transition: var(--transition);
   text-align: center;
   /* max-width: 80%; */
+}
+@media screen and (max-width: 750px) {
+  .overview-items-container {
+    grid-template-columns: 1fr;
+  }
 }
 /* 
 ==========
@@ -505,21 +510,35 @@ Offerings
   align-items: flex-start;
   gap: 2rem;
 }
+.offering-devider {
+  height: 2.5px;
+}
+.offering-btn {
+  background: var(--light-blue);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  border: none;
+}
+.offering-btn:hover {
+  box-shadow: var(--shadow-expanded);
+}
 .offering p {
   max-width: 80%;
   margin: auto auto;
 }
-.offering-btn {
-  padding: 0.5rem;
-  border: initial;
-  box-shadow: initial;
-  border-bottom: 2px solid var(--medium-blue);
+.offering-form {
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  border: var(--medium-blue);
+  background: var(--light-blue);
+
+  margin: 0 auto;
 }
-/* @media screen and (max-width: 800px) {
-  .offering-grid {
-    grid-template-columns: 1fr;
-  }
-} */
+@media screen and (max-width: 800px) {
+  /* .offering-form {
+    width: 300px;
+  } */
+}
 /* 
 ==========
 Skills
@@ -572,7 +591,7 @@ Footer
 }
 .footer-icons {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   place-items: center;
   margin-bottom: 2rem;
 }
