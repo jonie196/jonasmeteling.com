@@ -13,3 +13,15 @@ navBtn.addEventListener("click", () => {
 navClose.addEventListener("click", () => {
   sidebarMenu.classList.remove("showNav");
 });
+// setup booking
+const bookingBtn = document.getElementById("booking-btn");
+const booking = document.getElementById("booking");
+const bookingClose = document.getElementById("booking-close");
+// show nav
+bookingBtn.addEventListener("click", () => {
+  booking.classList.add("showBooking");
+});
+// close nav
+bookingClose.addEventListener("click", () => {
+  booking.classList.remove("showBooking");
+});

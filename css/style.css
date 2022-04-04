@@ -92,14 +92,15 @@ span {
   padding: 0.75rem 1rem;
   margin-top: 2rem;
   letter-spacing: 2px;
-  border-radius: 2px;
-  border-bottom: 2.5px solid var(--medium-blue);
   text-transform: capitalize;
-  /* box-shadow: var(--shadow); */
   transition: var(--transition);
+  background: var(--light-blue);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
 }
 .btn:hover {
   transform: scale(1.1);
+  box-shadow: var(--shadow-expanded);
 }
 .fas {
   padding: 1rem;
@@ -375,10 +376,11 @@ Banner
   font-style: italic;
   font-weight: lighter;
 }
-.btn-explore {
+.banner-btn {
   -webkit-animation: explore 3s ease infinite;
   animation: explore 3s ease infinite;
   padding: 1rem 2rem;
+  background: transparent;
 }
 header .section-center {
   margin-top: 0;
@@ -405,13 +407,6 @@ header .section-center {
 Skills
 ==========
  */
-/* .skills {
-  margin: 4rem auto;
-  text-align: center;
-} */
-/* .skills-header {
-  font-style: italic;
-} */
 .single-skills {
   margin: 3rem auto;
   display: grid;
@@ -420,9 +415,6 @@ Skills
   align-items: center;
   text-align: center;
   gap: 1rem;
-
-  /* border-top: 2px solid black;
-  border-bottom: 2px solid black; */
 }
 .skill {
   flex: 0 0 50%;

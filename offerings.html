@@ -25,7 +25,7 @@
         </div>
         <div>
           <ul class="menu">
-            <li><a href="about.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="offerings.html">Service</a></li>
             <li><a href="blog.html">Blog</a></li>
@@ -173,9 +173,9 @@
               <br /><br />
               <h4>Investment:</h4>
               <p>150€</p>
-              <a href="services.html" class="btn offering-btn"
-                >Book a Session</a
-              >
+              <div href="" class="btn offering-btn" id="booking-btn">Book a Session</div>
+                
+              </div>
             </div>
           </div>
           <!-- end of single overview item -->
@@ -322,6 +322,78 @@
       <!-- End of Devider -->
     </section>
     <!-- End of Offering -->
+    <!-- Book a Session -->
+    <section class="booking" id="booking">
+        <!-- Form -->
+        <span class="booking-close nav-close" id="booking-close">
+          <i class="fa fa-times"></i>
+        </span>
+        <section>
+          <form
+            action="https://formspree.io/f/mvolaedj"
+            method="POST"
+            class="form booking-form"
+          >
+            <h2 class="form-header">Booking</h2>
+            <div class="form-text-fields">
+              <label for="time">Name</label>
+              <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                id="name"
+                class="form-text-input"
+              />
+              <label for="time">E-Mail</label>
+              <input
+                type="email"
+                placeholder="E-Mail"
+                name="email"
+                id="email"
+                class="form-text-input"
+              />
+              <label for="time">Preferred Times:</label>
+              <textarea
+                name="message"
+                placeholder="preferred time AM/PM"
+                id="message"
+                cols="10"
+                rows="1"
+                class="form-text-input"
+              ></textarea>
+              <label for="time-zone">Time Zone:</label>
+              <select id="time zone" name="time zone">
+                  <option value="UTC(-10)">UTC(-10)</option>
+                  <option value="UTC(-9)">UTC(-9)</option>
+                  <option value="UTC(-8)">UTC(-8)</option>
+                  <option value="UTC(-7)">UTC(-7)</option>
+                  <option value="UTC(-6)">UTC(-6)</option>
+                  <option value="UTC(-5)">UTC(-5)</option>
+                  <option value="UTC(-4)">UTC(-4)</option>
+                  <option value="UTC(-3)">UTC(-3)</option>
+                  <option value="UTC(-2)">UTC(-2)</option>
+                  <option value="UTC(-1)">UTC(-1)</option>
+                  <option value="UTC(0)">UTC(0)</option>
+                  <option value="UTC(+1)">UTC(+1)</option>
+                  <option value="UTC(+2)">UTC(+2)</option>
+                  <option value="UTC(+3)">UTC(+3)</option>
+                  <option value="UTC(+4)">UTC(+4)</option>
+                  <option value="UTC(+5)">UTC(+5)</option>
+                  <option value="UTC(+6)">UTC(+6)</option>
+                  <option value="UTC(+7)">UTC(+7)</option>
+                  <option value="UTC(+8)">UTC(+8)</option>
+                  <option value="UTC(+9)">UTC(+9)</option>
+                  <option value="UTC(+10)">UTC(+10)</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-btn btn">
+              <p>SUBMIT</p>
+            </button>
+          </form>
+        </section>
+        <!-- Form -->
+    </section>
+    <!-- End of Book a Session -->
     <!-- Footer -->
     <section class="footer">
       <div class="footer-center section-center">

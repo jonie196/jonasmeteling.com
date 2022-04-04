@@ -22,6 +22,7 @@ Variables
     rgba(255, 255, 255, 0.9)
   );
   --light-blue: #e4f3f8;
+  --light-blue-transparent: hsla(195, 59%, 93%, 0.95);
   --medium-blue: #bfebff;
   --light-grey: rgba(128, 128, 128, 1);
   --medium-grey: rgb(75, 75, 75);
@@ -89,14 +90,15 @@ span {
   padding: 0.75rem 1rem;
   margin-top: 2rem;
   letter-spacing: 2px;
-  border-radius: 2px;
-  border-bottom: 2.5px solid var(--medium-blue);
   text-transform: capitalize;
-  /* box-shadow: var(--shadow); */
   transition: var(--transition);
+  background: var(--light-blue);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
 }
 .btn:hover {
   transform: scale(1.1);
+  box-shadow: var(--shadow-expanded);
 }
 .fas {
   padding: 1rem;
@@ -513,15 +515,6 @@ Offerings
 .offering-devider {
   height: 2.5px;
 }
-.offering-btn {
-  background: var(--light-blue);
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow);
-  border: none;
-}
-.offering-btn:hover {
-  box-shadow: var(--shadow-expanded);
-}
 .offering p {
   max-width: 80%;
   margin: auto auto;
@@ -576,6 +569,28 @@ Skills
   .skill {
     flex: 0 0 100%;
   }
+}
+/* 
+==========
+Booking
+==========
+ */
+.booking {
+  display: grid;
+  place-content: center;
+  position: fixed;
+  transform: translateX(150%);
+  z-index: 3;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: var(--transition);
+  background: var(--light-blue);
+  height: 100%;
+  opacity: 0.98;
+}
+.showBooking {
+  transform: translate(0);
 }
 /* 
 ==========
@@ -649,6 +664,7 @@ Form
   margin: 1rem auto;
   margin-top: -1rem;
   text-align: center;
+  font-weight: 200;
 }
 .form-text-input {
   display: block;
