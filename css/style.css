@@ -41,6 +41,9 @@ Variables
 Global Styles
 ==========
  */
+body {
+  background: var(--light-blue);
+}
 .section-center {
   width: 90vw;
   margin: 6rem auto;
@@ -84,7 +87,7 @@ ul {
 span {
   text-transform: capitalize;
 }
-.btn {
+.btn2 {
   opacity: 0.7;
   display: inline-block;
   text-decoration: none;
@@ -98,7 +101,25 @@ span {
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
 }
+.btn {
+  opacity: 0.7;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 0.75rem 1rem;
+  margin-top: 2rem;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+  background: white;
+}
 .btn:hover {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-expanded);
+}
+.btn2:hover {
   transform: scale(1.1);
   box-shadow: var(--shadow-expanded);
 }
@@ -155,8 +176,8 @@ span {
 /* Devider */
 .devider {
   margin-top: 0rem;
-  background: var(--light-blue);
-  height: 0.75rem;
+  height: 0.25rem;
+  background: white;
 }
 /* 
 ==========
@@ -480,14 +501,14 @@ Overview
   grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
   justify-content: center;
   justify-items: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   /* margin-top: 4rem; */
 }
 .overview-item {
   /* border: 2px solid var(--light-blue); */
   border-radius: var(--border-radius);
-  /* background: #d3f1ff; */
+  /* background: var(--light-blue); */
   box-shadow: var(--shadow);
   background: white;
 }
@@ -500,17 +521,17 @@ Overview
   left: 50%;
   top: 100%;
   transform: translate(-50%, -50%);
-  border: 5px solid var(--light-blue);
+  border: 1px solid var(--light-blue);
   border-radius: 50%;
   background: white;
 }
 .overview-img {
-  max-height: 10rem;
+  max-height: 7rem;
   -o-object-fit: cover;
   object-fit: cover;
 }
 .overview-text {
-  text-transform: capitalize;
+  text-transform: none;
   max-width: 80%;
   margin: 3rem auto;
   transition: var(--transition);
@@ -534,6 +555,7 @@ Offerings
   border-radius: var(--border-radius);
   padding-bottom: 1rem;
   box-shadow: var(--shadow);
+  background: white;
 }
 .offering p {
   max-width: 80%;
