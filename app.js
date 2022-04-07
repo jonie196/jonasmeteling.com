@@ -27,6 +27,19 @@ bookingClose.addEventListener("click", () => {
   booking.classList.remove("showBooking");
 });
 
+// setup booking
+const bookingBtn2 = document.getElementById("booking-mentorship-btn");
+const booking2 = document.getElementById("booking-mentorship");
+const bookingClose2 = document.getElementById("booking-mentorship-close");
+// show nav
+bookingBtn2.addEventListener("click", () => {
+  booking2.classList.add("showBooking");
+});
+// close nav
+bookingClose2.addEventListener("click", () => {
+  booking2.classList.remove("showBooking");
+});
+
 // Read More Read Less
 function expandFunction() {
   var dots = document.getElementById("dots");

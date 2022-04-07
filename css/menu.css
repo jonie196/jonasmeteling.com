@@ -179,6 +179,12 @@ a {
   background: white;
   height: 0.25rem;
 }
+.devider-blue {
+  margin-top: 0rem;
+  background: white;
+  height: 0.25rem;
+  background: var(--light-blue);
+}
 /* 
 ==========
 Animations
@@ -477,6 +483,9 @@ Overview
   /* max-width: 80%; */
 }
 #more {
+  display: none;
+}
+#more2 {
   display: none;
 }
 @media screen and (max-width: 750px) {

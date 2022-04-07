@@ -141,7 +141,7 @@
           <div class="overview-item healing">
             <div class="overview-img-container">
               <!-- <img class="img overview-img" src="/img/green-leaf.jpg" alt="" /> -->
-              <i class="fas fa-leaf overview-icon"></i>
+              <i class="fas fa-seedling overview-icon"></i>
             </div>
             <div class="overview-text">
               <h3>Sessions</h3>
@@ -155,13 +155,12 @@
                 In my 1 on 1 Sessions I am offering a Save And Supportive Space
                 for you to share and bring up what is present for you. Together
                 we will look into your core and see what is blocking you and
-                what is needed for you to Evolve, Grow, Learn And Expand<span
-                  id="dots"
-                  >...</span
-                >
+                what is needed for you to Evolve, Grow, Learn And Expand
+                <span id="dots">...</span>
               </p>
+              <br />
               <span id="more">
-                <div class="devider offering-devider"></div>
+                <div class="devider-blue offering-devider"></div>
                 <br /><br />
                 <h4>Duration:</h4>
                 <p>60 Minutes (Online Video Session)</p>
@@ -174,7 +173,7 @@
                 </p>
                 <br /><br />
                 <h4>Investment:</h4>
-                <p>150€</p>
+                <p>111€</p>
                 <div href="" class="btn offering-btn" id="booking-btn">
                   Book a Session
                 </div>
@@ -194,7 +193,7 @@
           <div class="overview-item healing">
             <div class="overview-img-container">
               <!-- <img class="img overview-img" src="/img/fire.jpg" alt="" /> -->
-              <i class="fas fa-fire overview-icon"></i>
+              <i class="fab fa-sketch overview-icon"></i>
             </div>
             <div class="overview-text">
               <h3>Mentorship</h3>
@@ -217,9 +216,9 @@
                   >...</span
                 >
               </p>
-
+              <br />
               <span id="more2">
-                <div class="devider offering-devider"></div>
+                <div class="devider-blue offering-devider"></div>
                 <br /><br />
                 <h4>Duration:</h4>
                 <p>12 Weeks</p>
@@ -231,7 +230,7 @@
                   messages and energetic support
                 </p>
                 <br /><br />
-                <h4>Bonus:</h4>
+                <h4>Bonuses:</h4>
                 <p>- Two 10 Day Online Meditation Courses</p>
                 <p>
                   - 7 Week Chakra Journey (Online Course, including 21 Videos)
@@ -248,7 +247,14 @@
                 <h4>Investment:</h4>
                 <p>3000€</p>
                 <p>(or 3 installments of 1100€)</p>
-                <a href="services.html" class="btn">Apply Here</a>
+                <br />
+                <p>
+                  (Once I received your Application we will have an Introduction
+                  call)
+                </p>
+                <div href="" class="btn" id="booking-mentorship-btn">
+                  Apply for Mentorship
+                </div>
               </span>
               <br />
               <button
@@ -264,12 +270,12 @@
           <!-- single overview item -->
           <div class="overview-item healing">
             <div class="overview-img-container">
-              <img
+              <!-- <img
                 class="img overview-img"
                 src="/img/galaxysmall.jpeg"
                 alt=""
-              />
-              <i class="fas fa-om overview-icon"></i>
+              /> -->
+              <i class="fas fa-desktop overview-icon"></i>
             </div>
             <div class="overview-text">
               <h3>Online Courses</h3>
@@ -289,8 +295,8 @@
           <!-- single overview item -->
           <div class="overview-item healing">
             <div class="overview-img-container">
-              <img class="img overview-img" src="/img/water.jpg" alt="" />
-              <i class="fas fa-water overview-icon"></i>
+              <!-- <img class="img overview-img" src="/img/water.jpg" alt="" /> -->
+              <i class="fas fa-video overview-icon"></i>
             </div>
             <div class="overview-text">
               <h3>Live Workshops</h3>
@@ -416,6 +422,110 @@
       <!-- Form -->
     </section>
     <!-- End of Book a Session -->
+    <!-- Apply for Mentorship-->
+    <section class="booking" id="booking-mentorship">
+      <!-- Form -->
+      <span class="booking-close nav-close" id="booking-mentorship-close">
+        <i class="fa fa-times"></i>
+      </span>
+      <section>
+        <form
+          action="https://formspree.io/f/mvolaedj"
+          method="POST"
+          class="form booking-form"
+        >
+          <h2 class="form-header">Booking</h2>
+          <div class="form-text-fields">
+            <label for="time">Name</label>
+            <input
+              type="text"
+              placeholder="Name"
+              name="name"
+              id="name"
+              class="form-text-input"
+            />
+            <label for="time">E-Mail</label>
+            <input
+              type="email"
+              placeholder="E-Mail"
+              name="email"
+              id="email"
+              class="form-text-input"
+            />
+            <label for="question"
+              >What specifically inspired your interest in my Mentorship
+              Program?</label
+            >
+            <textarea
+              name="message"
+              placeholder="write here..."
+              id="message"
+              cols="10"
+              rows="5"
+              class="form-text-input"
+            ></textarea>
+            <label for="question"
+              >What are your main struggles and challenges? What blockages do
+              you see in yourself and in your life?</label
+            >
+            <textarea
+              name="message"
+              placeholder="Please share a few paragraphs"
+              id="message"
+              cols="10"
+              rows="5"
+              class="form-text-input"
+            ></textarea>
+            <label for="time">Preferred Times for our Introduction Call:</label>
+            <textarea
+              name="message"
+              placeholder="preferred time AM/PM"
+              id="message"
+              cols="10"
+              rows="1"
+              class="form-text-input"
+            ></textarea>
+            <label for="time-zone">Time Zone:</label>
+            <select id="time zone" name="time zone">
+              <option value="UTC(-10)">UTC(-10)</option>
+              <option value="UTC(-9)">UTC(-9)</option>
+              <option value="UTC(-8)">UTC(-8)</option>
+              <option value="UTC(-7)">UTC(-7)</option>
+              <option value="UTC(-6)">UTC(-6)</option>
+              <option value="UTC(-5)">UTC(-5)</option>
+              <option value="UTC(-4)">UTC(-4)</option>
+              <option value="UTC(-3)">UTC(-3)</option>
+              <option value="UTC(-2)">UTC(-2)</option>
+              <option value="UTC(-1)">UTC(-1)</option>
+              <option value="UTC(0)">UTC(0)</option>
+              <option value="UTC(+1)">UTC(+1)</option>
+              <option value="UTC(+2)">UTC(+2)</option>
+              <option value="UTC(+3)">UTC(+3)</option>
+              <option value="UTC(+4)">UTC(+4)</option>
+              <option value="UTC(+5)">UTC(+5)</option>
+              <option value="UTC(+6)">UTC(+6)</option>
+              <option value="UTC(+7)">UTC(+7)</option>
+              <option value="UTC(+8)">UTC(+8)</option>
+              <option value="UTC(+9)">UTC(+9)</option>
+              <option value="UTC(+10)">UTC(+10)</option>
+            </select>
+            <br /><br />
+            <label for="payment-option">Preferred Payment Option</label>
+            <select name="payment-option" id="payment-option">
+              <option value="onetime payment">Onetime Payment of 3000€</option>
+              <option value="onetime payment">
+                Three Installments of 1100€
+              </option>
+            </select>
+          </div>
+          <button type="submit" class="submit-btn btn">
+            <p>SUBMIT</p>
+          </button>
+        </form>
+      </section>
+      <!-- Form -->
+    </section>
+    <!-- End of Apply for MEntorship -->
     <!-- Footer -->
     <section class="footer">
       <div class="footer-center section-center">

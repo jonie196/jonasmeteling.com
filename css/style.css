@@ -367,7 +367,7 @@ Banner
  */
 .banner {
   background: var(--linear-grading-white),
-    url(/img/colorful-mountains.jpeg) center/cover;
+    url(/img/colorful-mountains.jpeg) center/cover fixed;
   background-position: top;
   height: 100vh;
 }
@@ -503,7 +503,6 @@ Overview
   justify-items: center;
   align-items: flex-start;
   gap: 1rem;
-  /* margin-top: 4rem; */
 }
 .overview-item {
   /* border: 2px solid var(--light-blue); */
@@ -511,6 +510,7 @@ Overview
   /* background: var(--light-blue); */
   box-shadow: var(--shadow);
   background: white;
+  height: 100%;
 }
 /* s */
 .overview-img-container {
@@ -526,7 +526,7 @@ Overview
   background: white;
 }
 .overview-img {
-  max-height: 7rem;
+  max-height: 10rem;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -556,6 +556,7 @@ Offerings
   padding-bottom: 1rem;
   box-shadow: var(--shadow);
   background: white;
+  height: 100%;
 }
 .offering p {
   max-width: 80%;
@@ -566,6 +567,7 @@ Offerings
   border: initial;
   box-shadow: initial;
   border-bottom: 2px solid var(--medium-blue);
+  align-self: flex-end;
 }
 
 /* 
