@@ -23,7 +23,7 @@ Variables
   );
   --light-blue: #e4f3f8;
   --medium-blue: #bfebff;
-  --light-grey: rgba(128, 128, 128, 1);
+  --light-grey: rgb(128, 128, 128);
   --medium-grey: rgb(75, 75, 75);
   --border-radius: 5px;
   --spacing: 5px;
@@ -511,6 +511,7 @@ Overview
   box-shadow: var(--shadow);
   background: white;
   height: 100%;
+  transition: var(--transition);
 }
 /* s */
 .overview-img-container {
@@ -543,6 +544,9 @@ Overview
   transition: var(--transition);
   text-align: center;
   /* max-width: 80%; */
+}
+.readMore-btn {
+  transition: var(--transition);
 }
 
 /* 

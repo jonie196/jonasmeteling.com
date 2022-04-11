@@ -115,7 +115,7 @@ span {
   transition: var(--transition);
   border: none;
   background: transparent;
-  border-bottom: 2px solid var(--medium-blue);
+  border-bottom: 2px solid var(--light-blue);
 }
 .readMore-btn:hover {
   transform: scale(1.1);
@@ -181,7 +181,7 @@ a {
 }
 .devider-blue {
   margin-top: 0rem;
-  background: white;
+  background: var(--light-blue);
   height: 0.25rem;
   background: var(--light-blue);
 }
@@ -605,6 +605,23 @@ Skills
 }
 /* 
 ==========
+Application
+==========
+ */
+.application {
+  display: grid;
+  place-content: center;
+}
+iframe {
+  margin: 0 auto;
+}
+@media screen and (max-width: 720px) {
+  iframe {
+    width: 350px;
+  }
+}
+/* 
+==========
 Booking
 ==========
  */
@@ -625,6 +642,60 @@ Booking
 }
 .showBooking {
   transform: translate(0);
+}
+/* 
+==========
+Blog
+==========
+ */
+.blog-posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+.post {
+  display: grid;
+  padding: 1rem;
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  height: 100%;
+}
+.blog-date {
+  padding: 0.5rem;
+  background: var(--light-blue);
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+.blog-header {
+  margin-bottom: 1.5rem;
+}
+.blog-text {
+  margin-top: 1.5rem;
+}
+.blog-btn {
+  align-self: flex-end;
+}
+.blog-post-page {
+  display: grid;
+  background: white;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+.blog-page-text {
+  margin-top: 1.5rem;
+  /* width: 75%;
+  justify-self: center; */
+}
+.blog-page-img {
+  max-height: 20%;
+  object-fit: cover;
+}
+@media screen and (max-width: 650px) {
+  .blog-posts {
+    grid-template-columns: 1fr;
+  }
 }
 /* 
 ==========
