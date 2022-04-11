@@ -173,13 +173,12 @@
                 </p>
                 <br /><br />
                 <h4>Investment:</h4>
-                <p>111€</p>
-                <a href="/session.html" class="btn" target="_blanc"
-                  >Book a Session</a
-                >
-                <!-- <div href="" class="btn offering-btn" id="booking-btn">
+                <p>$155 CAD</p>
+                <!-- <a href="/session.html" class="btn" target="_blanc"
+                  >Book a Session</a> -->
+                <div href="" class="btn offering-btn" id="booking-btn">
                   Book a Session
-                </div> -->
+                </div>
               </span>
               <br />
               <button
@@ -248,12 +247,14 @@
                 </p>
                 <br /><br />
                 <h4>Investment:</h4>
-                <p>3000€</p>
-                <p>(or 3 installments of 1100€)</p>
+                <p>$3500 CAD</p>
+                <p>(or 3 installments of $1250)</p>
                 <br />
                 <p>
-                  (Once I received your Application we will have an Introduction
-                  call)
+                  <em
+                    >Once I received your Application we will have an
+                    Introduction call</em
+                  >
                 </p>
                 <!-- <div
                   href="/application.html"
@@ -366,24 +367,12 @@
       <span class="booking-close nav-close" id="booking-close">
         <i class="fa fa-times"></i>
       </span>
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSdrEbh9lOwXSfLQ-gT81J3ot9i7pXmkwl3O9Y9DMx2J6FDdeg/viewform?embedded=true"
-        width="640"
-        height="886"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        >Wird geladen…</iframe
-      >
       <h2 class="form-header">Booking</h2>
-      <!-- <section>
-        <form
-        action="https://formspree.io/f/mvolaedj"
-        method="POST"
-        class="form booking-form"
-        >
+      <section>
+        <form name="session-booking" method="POST" data-netlify="true" action="https://paypal.me/jonasmeteling0?country.x=CA&locale.x=en_US" class="form booking-form"></form>
+        
           <div class="form-text-fields">
-            <label for="time">Name</label>
+            <label for="time">Name:</label>
             <input
               type="text"
               placeholder="Name"
@@ -391,7 +380,7 @@
               id="name"
               class="form-text-input"
             />
-            <label for="time">E-Mail</label>
+            <label for="time">E-Mail:</label>
             <input
               type="email"
               placeholder="E-Mail"
@@ -399,7 +388,7 @@
               id="email"
               class="form-text-input"
             />
-            <label for="time">Preferred Times:</label>
+            <!-- <label for="time">Preferred Times:</label>
             <textarea
               name="message"
               placeholder="preferred time AM/PM"
@@ -407,8 +396,14 @@
               cols="10"
               rows="1"
               class="form-text-input"
-            ></textarea>
+            ></textarea> -->
+            <label for="time">Preferred Date and Time:</label>
+            <br><br>
+            <input type="datetime-local" id="dateandtime" name="ateandtime">
+            <br><br>
+            <!-- <input type="submit"> -->
             <label for="time-zone">Time Zone:</label>
+            <br><br>
             <select id="time zone" name="time zone">
               <option value="UTC(-10)">UTC(-10)</option>
               <option value="UTC(-9)">UTC(-9)</option>
@@ -434,10 +429,10 @@
             </select>
           </div>
           <button type="submit" class="submit-btn btn">
-            <p>SUBMIT</p>
+            <p>SUBMIT and pay</p>
           </button>
         </form>
-      </section> -->
+      </section>
       <!-- Form -->
     </section>
     <!-- End of Book a Session -->
