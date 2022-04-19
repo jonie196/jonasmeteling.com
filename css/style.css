@@ -367,7 +367,7 @@ Banner
  */
 .banner {
   background: var(--linear-grading-white),
-    url(/img/colorful-mountains.jpeg) center/cover fixed;
+    url(/img/colorful-mountains.jpeg) center/cover;
   background-position: top;
   height: 100vh;
 }

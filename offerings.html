@@ -12,6 +12,24 @@
       rel="stylesheet"
       href="/fontawesome-free-6.0.0-beta3-web/css/all.css"
     />
+    <!-- Icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon_io/favicon-16x16.png"
+    />
   </head>
   <body>
     <header class="banner">
@@ -174,11 +192,11 @@
                 <br /><br />
                 <h4>Investment:</h4>
                 <p>$155 CAD</p>
-                <!-- <a href="/session.html" class="btn" target="_blanc"
-                  >Book a Session</a> -->
-                <div href="" class="btn offering-btn" id="booking-btn">
+                <a href="/secondary/session.html" class="btn" target="_blanc"
+                  >Book a Session</a>
+                <!-- <div href="" class="btn offering-btn" id="booking-btn">
                   Book a Session
-                </div>
+                </div> -->
               </span>
               <br />
               <button
@@ -263,7 +281,7 @@
                 >
                   Apply for Mentorship
                 </div> -->
-                <a href="/application.html" class="btn" target="_blanc"
+                <a href="secondary/application.html" class="btn" target="_blanc"
                   >Apply for Mentorship</a
                 >
               </span>
@@ -369,7 +387,7 @@
       <h2 class="form-header">Booking</h2>
       <!-- Form -->
       <section>
-        <form name="session-booking" method="POST" data-netlify="true"  class="form booking-form"></form>
+        <form name="session-booking" action="https://formspree.io/f/mvolaedj" method="POST" class="form booking-form"></form>
         
           <div class="form-text-fields">
             <label for="time">Name:</label>
@@ -388,18 +406,9 @@
               id="email"
               class="form-text-input"
             />
-            <!-- <label for="time">Preferred Times:</label>
-            <textarea
-              name="message"
-              placeholder="preferred time AM/PM"
-              id="message"
-              cols="10"
-              rows="1"
-              class="form-text-input"
-            ></textarea> -->
             <label for="time">Preferred Date and Time:</label>
             <br><br>
-            <input type="datetime-local" id="dateandtime" name="ateandtime">
+            <input type="datetime-local" id="dateandtime" name="dateandtime">
             <br><br>
             <!-- <input type="submit"> -->
             <label for="time-zone">Time Zone:</label>
