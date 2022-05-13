@@ -137,6 +137,16 @@ span {
   border-radius: 5px;
   transition: var(--transition);
 }
+.img-center {
+  width: 100%;
+  border-radius: 5px;
+  transition: var(--transition);
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
 .img:hover {
   transform: scale(1.1);
 }
@@ -495,6 +505,13 @@ Overview
 }
 #more2 {
   display: none;
+}
+.service-intro {
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
 }
 @media screen and (max-width: 750px) {
   .overview-items-container {
