@@ -171,11 +171,15 @@ a {
   margin-bottom: 4rem;
 }
 .section-header {
-  padding-bottom: 0.75rem;
-  border-bottom: 2.5px solid var(--light-grey);
-  width: 70%;
+  /* padding-bottom: 0.75rem; */
+  /* border-bottom: 2.5px solid var(--light-grey); */
+  width: 60%;
   text-align: center;
-  margin: 0 auto;
+}
+.black-line {
+  max-width: 30rem;
+  opacity: 0.7;
+  margin: 1rem 0;
 }
 .article-grid {
   display: grid;
@@ -599,12 +603,6 @@ Offerings
 Skills
 ==========
  */
-.skills {
-  padding: 2rem 0;
-}
-/* .skills-header {
-  font-style: italic;
-} */
 .single-skills {
   margin: 3rem auto;
   display: flex;
