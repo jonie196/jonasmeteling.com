@@ -633,6 +633,13 @@ Offerings
   max-width: 80%;
   margin: auto auto;
 }
+.offering-form {
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  border: var(--medium-blue);
+  background: var(--light-blue);
+  margin: 0 auto;
+}
 
 /* 
 ==========
@@ -716,11 +723,14 @@ Form
   border: var(--medium-blue);
   background: var(--light-blue);
   width: 500px;
+  margin: 0 auto;
 }
 .form-header {
   color: var(--medium-grey);
   margin: 1rem auto;
   margin-top: -1rem;
+  text-align: center;
+  font-weight: 200;
 }
 .form-text-input {
   display: block;
