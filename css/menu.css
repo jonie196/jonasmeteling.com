@@ -22,8 +22,8 @@ Variables
     rgba(255, 255, 255, 0.9)
   );
   --transparent-white: rgba(255, 255, 255, 0.5);
-  --light-blue: #e4f3f8;
-  --light-blue-transparent: hsla(195, 59%, 93%, 0.95);
+  --light-blue: #e3f2f7;
+  --light-blue-transparent: #e3f2f8f2;
   --medium-blue: #bfebff;
   --light-grey: rgba(128, 128, 128, 1);
   --font-grey: rgb(102, 102, 102);

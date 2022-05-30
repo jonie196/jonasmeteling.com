@@ -4,7 +4,7 @@ Fonts
 ==========
  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /* 
 ==========
 Variables
@@ -464,6 +464,9 @@ Intro
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
 }
+.intro-text-img {
+  max-width: 250px;
+}
 @media screen and (max-width: 1300px) {
   .intro-text {
     grid-template-columns: 1fr;
@@ -630,13 +633,7 @@ Offerings
   max-width: 80%;
   margin: auto auto;
 }
-.offering-btn {
-  padding: 0.5rem;
-  border: initial;
-  box-shadow: initial;
-  border-bottom: 2px solid var(--medium-blue);
-  align-self: flex-end;
-}
+
 /* 
 ==========
 Gallery
