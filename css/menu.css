@@ -99,7 +99,7 @@ span {
   transition: var(--transition);
   box-shadow: var(--shadow);
   border-radius: var(--border-radius);
-  background: white;
+  background: var(--light-blue);
 }
 .btn:hover {
   transform: scale(1.1);
@@ -598,6 +598,7 @@ Offerings
     width: 300px;
   } */
 }
+
 /* 
 ==========
 Skills
