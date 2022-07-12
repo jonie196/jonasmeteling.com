@@ -700,6 +700,7 @@ Blog
 }
 .blog-header {
   margin-bottom: 1.5rem;
+  text-transform: uppercase;
 }
 .blog-text {
   margin-top: 1.5rem;
