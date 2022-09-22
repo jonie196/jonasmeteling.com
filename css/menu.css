@@ -67,7 +67,6 @@ h3 {
   font-size: 1.5rem;
   font-weight: 300;
   color: var(--medium-grey);
-  text-transform: capitalize;
 }
 h4 {
   font-size: 1.25rem;
@@ -152,6 +151,12 @@ span {
 }
 a {
   text-decoration: none;
+}
+video {
+  width: 100%;
+}
+.video {
+  width: 100%;
 }
 /* .img::after {
   position: absolute;
@@ -845,5 +850,59 @@ Form
 @media screen and (max-width: 555px) {
   .form {
     width: 330px;
+  }
+}
+
+/* 
+==========
+Masterclass
+==========
+ */
+.masterclass {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
+  gap: 4rem;
+}
+.background-golden {
+  background: url(/img/beautiful-mountains.jpeg) center/cover fixed;
+  /* background: white; */
+}
+.masterclass-img {
+  justify-items: center;
+  align-items: center;
+  border-radius: 0%;
+  box-shadow: var(--shadow);
+  width: 100%;
+}
+.masterclass-text {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  margin-bottom: 4rem;
+  justify-self: center;
+}
+.masterclass-fas {
+  color: var(--medium-grey);
+}
+
+.masterclass-btn {
+  color: white;
+  background: orange;
+}
+
+.masterclass-section {
+  background: orange;
+}
+@media screen and (max-width: 1000px) {
+  .masterclass {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .masterclass-header {
+    font-size: 2.5rem;
   }
 }
